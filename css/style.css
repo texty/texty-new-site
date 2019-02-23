@@ -117,6 +117,12 @@ ul.tags-list {
       grid-column: 3/4;
       grid-row: 3/4;
       z-index: 100; }
+      @media (max-width: 800px) {
+        #main #main-left h1#main-article-title {
+          grid-template-columns: 0.5fr 1fr minmax(min-content, 3fr); } }
+      @media (max-width: 1300px) {
+        #main #main-left h1#main-article-title {
+          font-size: 28px; } }
     #main #main-left #main-article-background {
       grid-column: 1/4;
       grid-row: 2/5;
