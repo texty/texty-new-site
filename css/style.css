@@ -29,7 +29,7 @@
   padding: 0; }
 
 body {
-  max-width: 1800px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -67,7 +67,7 @@ ul.tags-list {
   grid-column-gap: 20px; }
   @media (max-width: 800px) {
     #header {
-      grid-template-columns: 130px auto; } }
+      grid-template-columns: 2fr 1fr 1fr 1fr; } }
   #header #rubrics-container {
     grid-column: 3/11;
     display: grid;
@@ -113,7 +113,7 @@ ul.tags-list {
     #main #main-left h1#main-article-title {
       line-height: 1.4;
       width: 80%;
-      font-size: 35px;
+      font-size: 32px;
       grid-column: 3/4;
       grid-row: 3/4;
       z-index: 100; }
@@ -127,6 +127,11 @@ ul.tags-list {
       grid-column: 1/4;
       grid-row: 2/5;
       background-color: #ffc423; }
+    #main #main-left h2 {
+      font-size: 23px; }
+      @media (max-width: 1300px) {
+        #main #main-left h2 {
+          font-size: 18px; } }
     #main #main-left #article1-tags {
       grid-column: 2/3;
       grid-row: 6/7; }
