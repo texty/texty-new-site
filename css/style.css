@@ -158,6 +158,9 @@ ul.tags-list {
       @media (max-width: 800px) {
         #main #main-right #main-page-dja-projects {
           grid-template-rows: 50px max-content 50px 50px 200px 50px 50px 50px 50px; } }
+      @media (max-width: 1300px) {
+        #main #main-right #main-page-dja-projects {
+          grid-template-rows: 50px max-content 50px 50px 300px 50px 50px 50px 50px; } }
       #main #main-right #main-page-dja-projects #dja-link {
         grid-column: 1/3;
         grid-row: 2/3; }
