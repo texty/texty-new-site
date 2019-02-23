@@ -42,7 +42,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 10px 0; }
-  .rubric p span {
+  .rubric a span {
     padding-bottom: 1px;
     border-bottom: 1px solid black; }
 
