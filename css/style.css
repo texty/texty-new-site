@@ -37,6 +37,12 @@ body {
   font-family: "Clear-Sans", sans-serif;
   line-height: 1.6; }
 
+/* для усіх лінків*/
+a {
+  text-decoration: inherit;
+  color: inherit; }
+
+/*назви рубрик */
 .rubric {
   font-size: 20px;
   font-weight: 400;
@@ -49,6 +55,7 @@ body {
     padding-bottom: 1px;
     border-bottom: 1px solid black; }
 
+/*tags lists*/
 .tags {
   text-transform: uppercase; }
 
@@ -93,8 +100,6 @@ ul.tags-list {
       @media (max-width: 800px) {
         #header #texty-logo img {
           width: 90%; } }
-  #header div {
-    width: auto; }
 
 /* Головна стаття, лінки на останні дата проекти, аналітичні статті*/
 #main {
@@ -103,6 +108,7 @@ ul.tags-list {
   grid-template-columns: 1fr 1fr minmax(min-content, 3fr) repeat(5, 1fr);
   grid-template-rows: 50px 50px max-content 50px 50px max-content 50px max-content;
   grid-column-gap: 20px;
+  /* Ліва сторона - головна стаття та додаткові*/
   /* data-journalism-projects */ }
   @media (max-width: 800px) {
     #main {
@@ -116,7 +122,11 @@ ul.tags-list {
     grid-template-columns: 1fr 1fr minmax(min-content, 3fr);
     grid-template-rows: 50px 50px max-content 50px 50px max-content 50px max-content;
     grid-column-gap: 20px;
+    /* лінк на сторінку з усіма статтями*/
     /* головна стаття */
+    /* заголовок головної статті, що на жовтій підложці*/
+    /* жовта підложка під головною новиною*/
+    /* для текстової текстури головної новини*/
     /* дві додаткові статті */ }
     @media (max-width: 800px) {
       #main #main-left {
@@ -129,7 +139,7 @@ ul.tags-list {
       grid-column: 2/3;
       grid-row: 3/4;
       z-index: 100; }
-    #main #main-left h1#main-article-title {
+    #main #main-left h1#main-page-main-article-title {
       line-height: 1.4;
       width: 80%;
       font-size: 32px;
@@ -137,16 +147,16 @@ ul.tags-list {
       grid-row: 3/4;
       z-index: 100; }
       @media (max-width: 800px) {
-        #main #main-left h1#main-article-title {
+        #main #main-left h1#main-page-main-article-title {
           grid-template-columns: 0.5fr 1fr minmax(min-content, 3fr); } }
       @media (max-width: 1300px) {
-        #main #main-left h1#main-article-title {
+        #main #main-left h1#main-page-main-article-title {
           font-size: 28px; } }
-    #main #main-left #main-article-background {
+    #main #main-left #main-page-main-article-background {
       grid-column: 1/4;
       grid-row: 2/5;
       background-color: #ffc423; }
-    #main #main-left #text-factura {
+    #main #main-left #main-page-text-texture {
       grid-column: 3/4;
       grid-row: 2/5;
       width: 60%;
@@ -179,7 +189,9 @@ ul.tags-list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 50px max-content 50px 50px 400px 50px 50px 50px 50px;
-      grid-column-gap: 20px; }
+      grid-column-gap: 20px;
+      /*назва рубрики, лінк на усі дата-проекти*/
+      /* Контейнери для 5 проектів*/ }
       @media (max-width: 800px) {
         #main #main-right #main-page-dja-projects {
           grid-template-rows: 50px max-content 50px 50px 200px 50px 50px 50px 50px; } }
@@ -212,7 +224,8 @@ ul.tags-list {
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 20px; }
+  grid-column-gap: 20px;
+  /*Лінка на сторінку - "Новини", назва рубрики*/ }
   @media (max-width: 800px) {
     #main-page-news {
       grid-template-columns: 0.5fr 1fr minmax(min-content, 3fr); } }
