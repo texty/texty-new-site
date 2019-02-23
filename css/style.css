@@ -42,6 +42,9 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 10px 0; }
+  @media (max-width: 1300px) {
+    .rubric {
+      font-size: 15px; } }
   .rubric a span {
     padding-bottom: 1px;
     border-bottom: 1px solid black; }
