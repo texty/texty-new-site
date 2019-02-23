@@ -146,6 +146,12 @@ ul.tags-list {
       grid-column: 1/4;
       grid-row: 2/5;
       background-color: #ffc423; }
+    #main #main-left #text-factura {
+      grid-column: 3/4;
+      grid-row: 2/5;
+      width: 60%;
+      opacity: 0.07;
+      overflow: hidden; }
     #main #main-left h2 {
       font-size: 23px; }
       @media (max-width: 1300px) {
