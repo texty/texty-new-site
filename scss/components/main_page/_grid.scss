@@ -21,6 +21,7 @@ main {
     display: grid;
     column-gap: $column_gap;
     grid-template-columns: repeat(5, 1fr);
+
     // TODO Прибрати більшість рядків нахуй
     grid-template-rows: 100px max-content 100px 60px max-content 50px max-content;
 
@@ -39,6 +40,10 @@ main {
     #articles-link {
       grid-column: 3/-1;
       grid-row: 4/5;
+
+      display: flex;
+
+      a { align-self: center;}
     }
 
     .article { grid-column: 2/6 }

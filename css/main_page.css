@@ -85,7 +85,10 @@ main {
         grid-template-columns: 0.5fr 1fr minmax(min-content, 3fr); } }
     main .main-left #articles-link {
       grid-column: 3/-1;
-      grid-row: 4/5; }
+      grid-row: 4/5;
+      display: flex; }
+      main .main-left #articles-link a {
+        align-self: center; }
     main .main-left .article {
       grid-column: 2/6; }
     main .main-left .article-2 {
