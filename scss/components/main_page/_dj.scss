@@ -1,0 +1,81 @@
+.dj-projects {
+  display: grid;
+
+  column-gap: $column_gap;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px 50px max-content;
+
+  /*назва рубрики, лінк на усі дата-проекти*/
+  .dj-link {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  /* Контейнери для 5 проектів*/
+  .dj-project {
+    grid-row: 3/-1;
+    cursor: pointer;
+
+    @include filter(grayscale(0.9));
+
+    &:hover {
+      filter: none;
+    }
+
+    h5 {
+      font-weight: normal;
+      font-size: 14px;
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+
+    .cover {
+      height: 500px;
+      background-size: cover;
+    }
+  }
+
+  .dj1 {
+    //margin-top: 100px;
+    .cover {height: 500px;}
+  }
+
+  .dj2 {
+    margin-top: 100px;
+    .cover {height: 450px;}
+  }
+
+  .dj3 {
+    margin-top: -100px;
+    .cover {height: 550px;}
+  }
+
+  .dj4 {
+    margin-top: 120px;
+    .cover {height: 450px;}
+  }
+
+  .dj5 {
+    margin-top: 50px;
+    .cover {height: 450px;}
+  }
+
+  //TODO переходить у стилі html сторінки
+  .dj1 .cover {background-image: url('../../../img/parkings.png')}
+  .dj2 .cover {background-image: url('../../../img/rivers.png')}
+  .dj3 .cover {background-image: url('../../../img/amber.jpg')}
+  .dj4 .cover {background-image: url('../../../img/parkings.png')}
+  .dj5 .cover {background-image: url('../../../img/rivers.png')}
+
+
+  @media(max-width: $mq-narrow) {
+    //todo
+  }
+
+  @media(max-width: $mq-middle) {
+    .dj-project {
+      margin-top: 0 !important;
+    };
+  }
+
+}

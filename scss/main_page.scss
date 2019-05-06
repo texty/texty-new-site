@@ -1,0 +1,30 @@
+@import 'base/base';
+@import 'components/main_page/grid';
+
+@import 'components/header';
+@import 'components/main_page/big_card';
+@import 'components/main_page/article';
+@import 'components/main_page/dj';
+@import 'components/main_page/fragments';
+
+
+/*назви рубрик */
+.rubric {
+
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  @media(max-width: $mq-middle) {
+    font-size: 15px;
+  }
+
+  a span {
+    border-bottom: 1px solid black;
+    display: inline-block;
+  }
+}
+
+
+
+

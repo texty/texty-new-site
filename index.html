@@ -7,133 +7,134 @@
 
     <title>ТЕКСТИ</title>
 
-
-    <!-- Links -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/main_page.css"/>
 </head>
 
 
 <body>
 
-<!-- Шапка головної сторінки -->
-<div id="header">
-    <div id="texty-logo"><img src="img/logo-texty.png"/></div>
+<header>
+    <a class="texty-logo" href="http://texty.org.ua"><img src="img/logo-texty.png"/></a>
 
-    <div id="rubrics-container">
-        <div class="rubric"><a href=""><span>інфографіка</span></a></div>
-        <div class="rubric"><a href=""><span>принципи</span></a></div>
-        <div class="rubric"><a href=""><span>more</span></a></div>
-    </div>
-</div>
-
-
-<!-- Головний блок зі статтями та дата-проектами -->
-<div id="main">
-
-    <!-- Права сторона екрану - дата-проекти -->
-    <div id="main-right">
-        <div id="main-page-dja-projects">
-
-            <!-- назва рубрики, лінк на усі дата-проекти -->
-            <div id="dja-link" class="rubric"><a href=""><span>журналістика даних</span></a></div>
-
-            <!--Контейнери для 5 проектів-->
-            <div id="dj1" class="dja-projects-main"></div>
-            <div id="dj2" class="dja-projects-main"></div>
-            <div id="dj3" class="dja-projects-main"></div>
-            <div id="dj4" class="dja-projects-main"></div>
-            <div id="dj5" class="dja-projects-main"></div>
-        </div>
+    <div class="rubrics-container">
+        <div class="rubric r1"><a href=""><span>інфографіка</span></a></div>
+        <div class="rubric r2"><a href=""><span>принципи</span></a></div>
+        <div class="rubric r3"><a href=""><span>бургер</span></a></div>
     </div>
 
+    <input class="search-box" placeholder="Пошук" type="text">
+</header>
 
+
+<main>
     <!--Ліва сторона екрану - головна стаття та дві додаткові -->
-    <div id="main-left">
+    <section class="main-left">
 
         <!-- Назва рубрики - "Статті", лінк на сторінку з усіма статтями -->
         <div id="articles-link" class="rubric"><a href=""><span>статті</span></a></div>
 
+        <div class="big-card article-1">
+            <!-- Теги головної статті -->
+            <div class="tags">
+                <ul class="tags-list">
+                    <li>Езря</li>
+                    <li>Росія</li>
+                    <li>Імперія</li>
+                    <li>Татари</li>
+                </ul>
+            </div>
 
-        <!-- Теги головної статті -->
-        <div id="main-article-tags" class="tags">
-            <ul class="tags-list">
-                <li>Езря</li>
-                <li>Росія</li>
-                <li>Імперія</li>
-                <li>Татари</li>
-            </ul>
+            <!-- Фрейм для текстової текстури під головною статтею -->
+            <div id="main-page-text-texture"></div>
+            <!--Жовтна підложка під головною статтею-->
+            <div id="main-page-main-article-background"></div>
+            <!--Заголовок головної статті-->
+            <h1 class="big-card-title">Езрянські підпільники. У Києві активісти з Поволжя та Уралу започаткували
+                руч за незалежність своїх республік</h1>
         </div>
 
-        <!-- Фрейм для текстової текстури під головною статтею -->
-        <div id="main-page-text-texture">
-        </div>
+        <div class="article-2 article">
+            <div class="tags">
+                <ul class="tags-list">
+                    <li>Езря</li>
+                    <li>Росія</li>
+                    <li>Імперія</li>
+                    <li>Татари</li>
+                </ul>
+            </div>
 
-        <!--Жовтна підложка під головною статтею-->
-        <div id="main-page-main-article-background"></div>
-
-        <!--Заголовок головної статті-->
-        <h1 id="main-page-main-article-title">Езрянські підпільники. У Києві активісти з Поволжя та Уралу започаткували
-            руч за незалежність своїх республік</h1>
-
-
-        <!--Додаткова стаття 1 -->
-        <!--теги-->
-        <div id="article1-tags" class="tags">
-            <ul class="tags-list">
-                <li>Езря</li>
-                <li>Росія</li>
-                <li>Імперія</li>
-                <li>Татари</li>
-            </ul>
-        </div>
-
-        <!--назва-->
-        <div id="article1" class="main-page-articles">
-            <a href=""><h2>Три міфи зрадофіла. Українська патріотична лють – найдієвіша політтехнологія Кремля</h2></a>
+            <a href="" class="article-caption"><h2>Три міфи зрадофіла. Українська патріотична лють – найдієвіша політтехнологія Кремля</h2></a>
         </div>
 
 
-        <!--Додаткова стаття 2 -->
-        <!--теги-->
-        <div id="article2-tags" class="tags">
-            <ul class="tags-list">
-                <li>Езря</li>
-                <li>Росія</li>
-                <li>Імперія</li>
-                <li>Татари</li>
-            </ul>
-        </div>
+        <div class="article-3 article">
+            <div class="tags">
+                <ul class="tags-list">
+                    <li>Езря</li>
+                    <li>Росія</li>
+                    <li>Імперія</li>
+                    <li>Татари</li>
+                </ul>
+            </div>
 
-        <!--назва-->
-        <div id="article2" class="main-page-articles">
-            <a href=""><h2>Всупереч прогнозам, Україна в 2018 році зібрала найбільший урожай зернових за весь час свого
-                існування</h2></a>
+            <a href="" class="article-caption">
+                <h2>Всупереч прогнозам, Україна в 2018 році зібрала найбільший урожай зернових за весь час свого
+                існування</h2>
+            </a>
         </div>
-    </div>
-</div>
+    </section>
+
+    <!-- Права сторона екрану - дата-проекти -->
+    <section class="main-right dj-projects">
+
+        <!-- назва рубрики, лінк на усі дата-проекти -->
+        <div class="dj-link rubric"><a href=""><span>журналістика даних</span></a></div>
+
+        <!--Контейнери для 5 проектів-->
+        <a class="dj1 dj-project">
+            <div class="cover"></div>
+            <h5>Твіттер-боти</h5>
+        </a>
+        <a class="dj2 dj-project">
+            <h5>Земляна проказа</h5>
+            <div class="cover"></div>
+        </a>
+        <a class="dj3 dj-project">
+            <div class="cover"></div>
+            <h5>Дизель, бензин чи елекрика?</h5>
+        </a>
+        <a class="dj4 dj-project">
+            <h5>Небезпечно для життя</h5>
+            <div class="cover"></div>
+        </a>
+        <a class="dj5 dj-project">
+            <div class="cover"></div>
+            <h5>Таємниці київських вод</h5>
+        </a>
+    </section>
+</main>
 
 
 
 <!-- Нижній блок - новини головної сторінки-->
-<div id="main-page-news">
-
-    <!--Назва рубрики-->
-    <div id="news-link" class="rubric"><a href=""><span>новини</span></a></div>
+<section class="fragments">
 
 
     <!-- Самі новини-->
-    <div id="main-page-news-container">
-        <a href=""><h4 id="main-page-news1" class="main-page-news">Відкриті дані про володарів надр: Тепер можна шукати,
+    <div class="fragments-container">
+        <div id="fragments-link" class="rubric"><a href=""><span>новини</span></a></div>
+
+        <a class="fragment f1" href=""><h4>Відкриті дані про володарів надр: Тепер можна шукати,
             хто, що й де видобуває в Україні</h4></a>
-        <a href=""><h4 id="main-page-news2" class="main-page-news">Тимошенко взялася нахвалювати Авакова</h4></a>
-        <a href=""><h4 id="main-page-news3" class="main-page-news">Хамськи припарковане авто в Києві пересунули без
+        <a class="fragment f2" href=""><h4>Тимошенко взялася нахвалювати Авакова</h4></a>
+        <a class="fragment f3" href=""><h4>Хамськи припарковане авто в Києві пересунули без
             евакуатора - каром (ВІДЕО)</h4></a>
-        <a href=""><h4 id="main-page-news4" class="main-page-news">Ryanair та Wizz Air оштрафували в Італії за нові
+        <a class="fragment f4" href=""><h4>Ryanair та Wizz Air оштрафували в Італії за нові
             правила перевезення багажу</h4></a>
-        <a href=""><h4 id="main-page-news5" class="main-page-news">Повна фура цегли по сходах влетіла з арки на Хрещатик
+        <a class="fragment f5" href=""><h4>Повна фура цегли по сходах влетіла з арки на Хрещатик
             (ВІДЕО)</h4></a>
     </div>
-</div>
+</section>
 
 
 </body>

@@ -1,0 +1,21 @@
+#flashes {
+  position: fixed;
+  margin: 3em 2em;
+  z-index: 1000;
+
+  .flash {
+    box-shadow: 0.15em 0.15em 0.5em 0 rgba(lighten($fontcol, 50%), 0.5);
+    border-left: 3px solid $orange;
+    padding: 0.5em;
+    display:inline-block;
+
+    &.flash_info {
+      background: rgba($bgcol, 0.85);
+      border-left: 3px solid $green;
+    }
+    &.flash_error {
+      border-left: 3px solid lighten($fontcol, 20%);
+      background: rgba($orange, 0.85);
+    }
+  }
+}
